@@ -1,0 +1,29 @@
+/** home.component.css
+ * Folhas de estilo
+ */
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  background: white;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: rgb(244, 244, 244);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+}
+
+.item h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.item div {
+  padding: 1rem;
+}

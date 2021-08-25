@@ -1,0 +1,114 @@
+/** styles.css
+ * Folhas de estilo globais
+ */
+
+/* Reset do CSS para que seja o mesmo entre os navegadores */
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px; /* Unidade rem */
+  font-family: sans-serif;
+}
+
+div,
+header,
+nav,
+footer,
+article,
+main,
+aside {
+  display: block;
+}
+
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+/* Fundo do tema */
+body {
+  background-color: darkblue;
+  background-image: url(assets/background01.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*****Conteúdo Central*****/
+
+/* Elemento Article */
+
+article {
+  padding: 0 1rem;
+}
+
+/***** Estilos de uso geral *****/
+
+/* Centraliza conteúdo do elemento */
+.text-center {
+  text-align: center;
+}
+
+/* Alinha conteúdo à direita */
+.text-right {
+  text-align: right;
+}
+
+/* Elemento é um bloco */
+.block {
+  display: block;
+}
+
+/* Imagens Responsivas Fluidas*/
+.fluid {
+  max-width: 100%;
+}
+
+/* Botões */
+.btn {
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Botões 'primary' */
+.primary {
+  background: steelblue;
+  color: white;
+}
+.primary:hover {
+  background: orangered;
+}
+
+/* Artigos */
+
+article figure {
+  display: table;
+  margin: auto;
+  font-size: small;
+  text-align: center;
+}
+
+article figure img {
+  max-width: 100%;
+}

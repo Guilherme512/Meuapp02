@@ -1,0 +1,9 @@
+<article *ngIf="this.item">
+  <h2>{{ item.title }}</h2>
+  <small class="block text-right">Por {{ item.author }} em {{ item.date | date: 'dd/MM/yyyy' }}.</small>
+  <div [innerHTML]="item.text"></div>
+  <hr>
+  <p class="text-center">
+    <button class="btn primary" routerLink="/home"><i class="fas fa-pen-nib fa-fw"></i> Todos os artigos</button>
+  </p>
+</article>

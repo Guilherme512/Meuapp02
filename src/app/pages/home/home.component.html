@@ -1,0 +1,17 @@
+<article>
+
+  <h2>Artigos Recentes</h2>
+
+  <small class="block text-right">Mais novos primeiro.</small>
+
+  <div class="list">
+    <div class="item" *ngFor="let item of items | async">
+      <img src="{{ item.thumbnail }}" alt="{{ item.title }}" routerLink="/view/{{ item.id }}" />
+      <div routerLink="/view/{{ item.id }}">
+        <h3>{{ item.title }}</h3>
+        {{ item.resume }}
+      </div>
+    </div>
+  </div>
+
+</article>
