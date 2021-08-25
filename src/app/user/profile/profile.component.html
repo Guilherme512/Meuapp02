@@ -1,1 +1,26 @@
-<p>profile works!</p>
+<article>
+
+  <h2>Perfil de Usuário</h2>
+
+  <div class="card" *ngIf="auth.user | async as user">
+
+    <img src="{{ user.photoURL }}" alt="{{ user .displayName }}">
+    <div class="card-content">
+      <h3>{{ user .displayName }}</h3>
+      {{ user.email }}
+      <p class="text-center">
+        <button class="btn expand primary" (click)="openProfile()">
+          <i class="fab fa-google fa-fw"></i> Ver perfil no Google
+        </button>
+      </p>
+    </div>
+
+    <p class="text-center">
+      <button class="btn expand danger" routerLink="/user/logout">
+        <i class="fas fa-sign-out-alt fa-fw"></i> Sair / Logout
+      </button>
+    </p>
+
+  </div>
+
+  </article>

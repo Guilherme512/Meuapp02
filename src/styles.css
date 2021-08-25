@@ -91,13 +91,27 @@ article {
   transition: 0.2s;
 }
 
+.btn:hover {
+  background: grey;
+  color: white;
+}
+
 /* Botões 'primary' */
 .primary {
   background: steelblue;
   color: white;
 }
-.primary:hover {
+
+.danger {
   background: orangered;
+  color: white;
+}
+
+button.expand {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 /* Artigos */
@@ -111,4 +125,24 @@ article figure {
 
 article figure img {
   max-width: 100%;
+}
+
+/* Cards */
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.card img {
+  display: block;
+  margin: auto;
+}
+
+.card-content {
 }
